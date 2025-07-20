@@ -14,7 +14,7 @@ namespace prjwaters.Controllers
         {
             _config = config;
         }
-
+        //test
         [HttpGet("all")]
         public IActionResult GetAll()
         {
