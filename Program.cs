@@ -3,7 +3,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Swagger generator + Swagger UI ³£­n
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
+builder.Services.AddSwaggerGen(c =>
+{
+    c.EnableAnnotations();
+});
 
 var app = builder.Build();
 
